@@ -41,24 +41,61 @@
 // }
 // console.log(result)
 //! 1
-let result=null;
-let ersteZahl=parseInt(prompt(`Geben Sie die erste Zahl ein`));
-let zweiteZahl=parseInt(prompt(`Geben Sie die zweite Zahl ein`));
-let operator=prompt(`Geben Sie einen Operator ein: "+" "-" "/" "%" "*"`)
-if(operator===`+`){
-    result=ersteZahl+zweiteZahl
-}
-else if(operator===`-`){
-    result=ersteZahl-zweiteZahl
-}else if(operator===`*`){
-    result=ersteZahl*zweiteZahl
-}else if(operator===`%`){
-    result=ersteZahl%zweiteZahl
-}
-if(!isNaN(result)){
-    console.log(`[result]`, result)
-}
-else{
-    alert(`Etwas ist schief gelaufen!`)
-}
+// let result=null;
+// let ersteZahl=parseInt(prompt(`Geben Sie die erste Zahl ein`));
+// let zweiteZahl=parseInt(prompt(`Geben Sie die zweite Zahl ein`));
+// let operator=prompt(`Geben Sie einen Operator ein: "+" "-" "/" "%" "*"`)
+// if(operator===`+`){
+//     result=ersteZahl+zweiteZahl
+// }
+// else if(operator===`-`){
+//     result=ersteZahl-zweiteZahl
+// }else if(operator===`*`){
+//     result=ersteZahl*zweiteZahl
+// }else if(operator===`%`){
+//     result=ersteZahl%zweiteZahl
+// }
+// if(!isNaN(result)){
+//     console.log(`[result]`, result)
+// }
+// else{
+//     alert(`Etwas ist schief gelaufen!`)
+// }
+//! 2
+// let result=null
+// let ersreZahl=parseInt(prompt(`Введите первое число`));
+// let zweiteZahl=parseInt(prompt(`Введите второе число`));
+// let operator=prompt(`Введите оператор: "+" ; "-";"/"` );
+// if(operator===`+`){
+//     result=ersreZahl+zweiteZahl
+// }
+// else if(operator===`-`){
+//     result=ersreZahl-zweiteZahl
+// }
+// if(!isNaN(result)){
+//     console.log(result)
+// }  
+// else{
+//     alert(`Etwas ist schief gelaufen!`)
+// }
+//! 3
+// let result=null
+// let ersteZahl=parseInt(prompt(`Erste zahl`))
+// let zweiteZahl=parseInt(prompt(`Zweite zahl`))
+// let operator=prompt(`"+" "-" "/"`)
+// if(operator===`+`){
+//     result=ersteZahl+zweiteZahl
+// }
+// else if(operator===`-`){
+//     result=ersteZahl-zweiteZahl
+// }
+// else if(operator===`/`){
+//     result=ersteZahl/zweiteZahl
+// }
 
+// if(!isNaN(result)){
+//     console.log(result)
+// }
+// else{
+//     alert(`Что то пошло не так`)
+// }
