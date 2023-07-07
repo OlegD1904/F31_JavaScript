@@ -99,3 +99,23 @@
 // else{
 //     alert(`Что то пошло не так`)
 // }
+let result=null
+let ersteZahl=parseInt(prompt(`Введи первое число`))
+let zweiteZahl=parseInt(prompt(`Введи второе число`))
+let operator=prompt("+;-;/")
+if(operator==="-"){
+    result=ersteZahl-zweiteZahl
+}
+else if (operator==="+"){
+    result=ersteZahl+zweiteZahl
+}
+else if(operator==="/"){
+    result=ersteZahl/zweiteZahl
+}
+if(!isNaN(result)){
+    console.log(result)
+    alert(result)
+}
+else{
+    alert("Etwas ist schief gelaufen")
+}
