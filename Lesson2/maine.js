@@ -99,23 +99,105 @@
 // else{
 //     alert(`Что то пошло не так`)
 // }
-let result=null
-let ersteZahl=parseInt(prompt(`Введи первое число`))
-let zweiteZahl=parseInt(prompt(`Введи второе число`))
-let operator=prompt("+;-;/")
-if(operator==="-"){
-    result=ersteZahl-zweiteZahl
+// let result=null
+// let ersteZahl=parseInt(prompt(`Введи первое число`))
+// let zweiteZahl=parseInt(prompt(`Введи второе число`))
+// let operator=prompt("+;-;/")
+// if(operator==="-"){
+//     result=ersteZahl-zweiteZahl
+// }
+// else if (operator==="+"){
+//  result=ersteZahl+zweiteZahl
+// }
+// else if(operator==="/"){
+//  result=ersteZahl/zweiteZahl
+// }
+//  if(!isNaN(result)){
+//     console.log(result)
+//     alert(result)
+// }
+// else{
+//     alert("Etwas ist schief gelaufen")
+// }
+//! 3
+// let result=null;
+// let ersteZahl=parseInt(prompt(`Erste Zahl`))
+// let zweiteZahl=parseInt(prompt(`Zweite Zahl`))
+// let operator=prompt(`"*"; "-"; "/"`)
+// if(operator==="*"){
+//     result=ersteZahl*zweiteZahl
+// } else if(operator==="+"){
+//     result=ersteZahl+zweiteZahl
+// } else if(operator==="/"){
+//     result=ersteZahl/zweiteZahl
+// }
+// if(!isNaN(result)){
+//     console.log(result)
+//     alert(result)
+//     alert(`Ura`)
+// }
+// else{
+//     console.log("Etwas ist schief gelaufen!")
+//     alert(`Etwas ist schief gelaufen!`)
+// }
+
+//cycles; functions; objects
+//! Objects /объект это скобки{} и описание в нём переменных локальных для него
+let oleh={
+    //: -> = /двоеточее это абсолютный эквивалент равенству/- defenition / это и есть определение/ знак равенства писать не нужно
+    //key/prperty(это наисенование "ersteName"): value
+    ersteName:`Oleh`,
+    nachName:`Dundiev`,
+    alt:23
+
 }
-else if (operator==="+"){
-    result=ersteZahl+zweiteZahl
+/* Что бы получить доступ к значениям нам нужно обратиться след образом
+<object>.<properti>*/
+//Access to values /Доступ к значениям
+console.log(`[oleh.ersteName]`, oleh.ersteName);
+console.log(`[oleh.nachName]`, oleh.nachName);
+console.log(`[oleh.alt]`, oleh.alt);
+//! app Clab control /мы не пускаем кому меньше 18 лет
+var john={
+    ersteName:`john`,
+    nachName:`007`,
+    alt:18
+      
 }
-else if(operator==="/"){
-    result=ersteZahl/zweiteZahl
+if(john.alt<18){
+    console.log(`Tschöss!`)
+}else if(john.alt>18){
+    console.log(`Hallo!`)
 }
-if(!isNaN(result)){
-    console.log(result)
-    alert(result)
+else {
+    console.log(`Hak!`)
 }
-else{
-    alert("Etwas ist schief gelaufen")
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
