@@ -142,7 +142,7 @@
 // }
 
 //cycles; functions; objects
-//! Objects /объект это скобки{} и описание в нём переменных локальных для него
+/*//! Objects /объект это скобки{} и описание в нём переменных локальных для него
 let oleh={
     //: -> = /двоеточее это абсолютный эквивалент равенству/- defenition / это и есть определение/ знак равенства писать не нужно
     //key/prperty(это наисенование "ersteName"): value
@@ -151,27 +151,51 @@ let oleh={
     alt:23
 
 }
-/* Что бы получить доступ к значениям нам нужно обратиться след образом
-<object>.<properti>*/
+//Что бы получить доступ к значениям нам нужно обратиться след образом
+//<object>.<properti>
 //Access to values /Доступ к значениям
 console.log(`[oleh.ersteName]`, oleh.ersteName);
 console.log(`[oleh.nachName]`, oleh.nachName);
 console.log(`[oleh.alt]`, oleh.alt);
 //! app Clab control /мы не пускаем кому меньше 18 лет
 var john={
-    ersteName:`john`,
+    ersteName:`mic`,
     nachName:`007`,
     alt:18
+
       
 }
-if(john.alt<18){
-    console.log(`Tschöss!`)
-}else if(john.alt>18){
+if(john.alt===18){
     console.log(`Hallo!`)
+}
+// если мы хотим что бы программа отробатывала все кейсы 
+//с выводом в консоль `Hallo!` и "Herzlich Willcommen!" /в зависимости какой возрост ставим в alt и в сравнении ><===/
+// запись делаем серез if
+//если поочереди  `Hallo!` а потом `Herzlich Willcommen!` записываем через else if
+else if(john.alt>=18){
+    console.log(`Herzlich Willcommen!`)
 }
 else {
     console.log(`Hak!`)
 }
+//!
+//more condition 
+//если Джону 18 лет и мы хотим быть уверенными что это точно Джон
+// мы как то должны описать "И" - "and"
+//&& - "and" "И" - это логический оператор который записываеться как два амперсанта
+// ||  - "or" - "или"
+//(!) - not - нет 
+if (john.alt===18 && john.ersteName===`john`){
+    console.log(`Hallo!`)
+}else if(john.alt>=18){
+    console.log(`Herzlich Willcommen!`)
+}
+// если это будет не Джон а другой, тогда будет выплняться только `Herzlich Willcommen!`
+//т.к. сравнение в этом условии даёться только  alt*/
+
+//!AGE - detector / детектор возроста
+
+
 
 
 
