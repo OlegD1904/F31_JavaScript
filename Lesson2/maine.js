@@ -235,6 +235,8 @@ else if(user.age>=40 && user.age<60){
     console.log(`Greeting!`)
     alert(`Greeting!`)
 }*/
+
+/*
 //! такой код читаеться не очень хорошо /else if(user.age>=20 && user.age<40){...
 //самый оптимальный способ  вынести это всё в condition
 //Перенёс это условие ->(user.age==0 && user.age<20) в эту переменную -> var young
@@ -268,9 +270,49 @@ else if(unExist||almostDeadman){
     console.log(`ERROR`)
     alert(`ERROR`)
 
+}*/
+//!cycles
+//While - /пока , в смысле до тех пор пока что то не произойдёт./ - цикл
+//While - работает пока условия true
+//force quit/насильный выхоьд/ -> break /ключевое слово для выхода/;
+
+
+var counter = 0;
+//0->.....-> 10 - нам нужно поэтапно вывести что находиться между 0 и 10
+//в максимально быстрой форме
+//можно сделать так
+// var counter=1
+// console.log(counter)
+// var counter=2
+// console.log(counter)
+// var counter=3
+// console.log(counter)
+// var counter=4
+// console.log(counter)
+// но вместо этой формы можно записать цикл
+// пока /counter/ не  будет равен 10 /!=10/ мы что то будем делать
+//когда counter должен быть равен 10/ мы должны выполнять дополнение 1 еденицы к counter
+
+/*while (counter !=10){
+    // или можно сделать так
+    //если counter===8 тогда мы сделаем break и процесс остановиться
+    //break - это насильный выход из цикла
+    // так же мы можем использовать не только слово /break/
+    //но и слово /continue/-> skip это означает пропускать
+
+    if(counter===5){
+       // break;
+     //если  counter===7, скипни/skip/ его 
+          continue
+     // он берёт и пропускает всё что написано ниже / counter=counter+1,console.log(counter)/ - берёт и пропускает одну итерацию     
+    }
+    counter=counter+1 
+    //counter=counter+1 - у нас этот участок кода будет выполняться пока на будет = 10
+     console.log(counter)
 }
-
-
+//  то есть этот участок кода выполниться 10 раз. Как только  counter =10 цикл остановится
+ // то есть  условие /counter !=10/ станет ложью
+ */
 
 
 
