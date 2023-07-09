@@ -194,9 +194,81 @@ if (john.alt===18 && john.ersteName===`john`){
 //т.к. сравнение в этом условии даёться только  alt*/
 
 //!AGE - detector / детектор возроста
+/*//У нас есть пользователь с возростом 23 года(age)
+var user={
+    age:45
+}
+//если user.age больше 0(age) , и /&&/ меньше/</ чем 20 (age)
+if (user.age>0 && user.age<20){
+    console.log(`Hallo, baby!`)
+}
+//или если 
+else if(user.age>=20 && user.age<40){
+    console.log(`Sup!`)
+}
+else if(user.age>=40 && user.age<60){
+    console.log(`Greeting!`)
+}*/
+/*// !но мы хотим что бы пользователь сам вводил возрост
+//мы можем формировать в JS все данные динамически, те по ходу дела
+//мы формируем переменную var userAge=prompt(`Введите свой возрост`)
+//где он должен сам ввести данные. При этом исползуем что бы преобразовать string->namber
+//информацию полученную от prompt
+var userAge=parseInt(prompt(`Введите свой возрост!`))
 
+var user={
+    //  age:25 -> age:userAge 
+    age:userAge
+}
+//если user.age больше 0(age) , и /&&/ меньше/</ чем 20 (age)
+if (user.age==0 && user.age<20)
+{
+    console.log(`Hallo, baby!`)
+    alert(`Hallo, baby!`)
+}
+//или если 
+else if(user.age>=20 && user.age<40){
+    console.log(`Sup!`)
+    alert(`Sup!`)
+}
+else if(user.age>=40 && user.age<60){
+    console.log(`Greeting!`)
+    alert(`Greeting!`)
+}*/
+//! такой код читаеться не очень хорошо /else if(user.age>=20 && user.age<40){...
+//самый оптимальный способ  вынести это всё в condition
+//Перенёс это условие ->(user.age==0 && user.age<20) в эту переменную -> var young
+var userAge=parseInt(prompt(`Ваш возрост`));
 
+var user={
+    age:userAge
+};
 
+var unExist=user.age<60;
+var young =user.age>0 && user.age<20;
+var abult=user.age>=20 && user.age<40;
+var elberly=user.age>=40 && user.age<60;
+var almostDeadman=user.age>60;
+// если молодой /if (young)/ так всегда проще находить и разобрать
+// и почитать, что значит молодой
+if (young){
+    console.log(`Hallo, baby!`);
+    alert(`Hallo, baby!`)
+}
+else if(abult){
+    console.log(`Sup?`)
+    alert(`Sup?`)
+}
+else if(elberly){
+    console.log(`Greeting!`)
+    alert(`Greeting!`)
+}
+//или он сильно старый или не существует / это когда /-3/ или 61 и больше
+else if(unExist||almostDeadman){
+    console.log(`ERROR`)
+    alert(`ERROR`)
+
+}
 
 
 
