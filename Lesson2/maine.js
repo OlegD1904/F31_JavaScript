@@ -408,9 +408,12 @@ if (userChoos.toLocaleLowerCase()===`y`){
 //5)  но email мы идём проверять если у нас имя valid /действительное/
 //6) password should (должен) be longer than 7and * might include: namber and strings - пароль должен быть длинее чем 7 символов
     //и может включать в себя числа и строки
-//7) age must be bigger than 18
+//7)this case migth be acceed only if all conditions above is  TRUE.... /этот случай может быть принят, только если все вышеперечисленные условия ИСТИНА/
+   //.....  age must be bigger than 18
 //8) if all above (выше) ist ture -> console.log-> Welcome!
 //9) Ohterwise(в противном случае) -> Go out of here!/ Уходи от сюда!
+//то есть каждый последующий цикл выполняеться если предидущий прошёл проверку, и оказался TRUE 
+
 
 
 
