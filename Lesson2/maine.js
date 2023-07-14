@@ -277,7 +277,9 @@ else if(unExist||almostDeadman){
 //force quit/насильный выхоьд/ -> break /ключевое слово для выхода/;
 
 
-var counter = 0;
+//var counter = 0;
+//! WE SHOULD USE WHILE WHEN WE DON´T KNOW ANYTHING ABOUT: AMOUNT OF ITERRATION
+//! МЫ ДОЛЖНЫ ИСПОЛЬЗОВАТЬ, КОГДА МЫ НИЧЕГО НЕ ЗНАЕМ О: ОБЪЕМ ИТЕРРАЦИИ
 //0->.....-> 10 - нам нужно поэтапно вывести что находиться между 0 и 10
 //в максимально быстрой форме
 //можно сделать так
@@ -312,25 +314,93 @@ var counter = 0;
 }
 //  то есть этот участок кода выполниться 10 раз. Как только  counter =10 цикл остановится
  // то есть  условие /counter !=10/ станет ложью
- */
+*/
+//! /Задание/ Task
+// нам понадобятся / USEFUL: While, if, isNan, isfinite
+//Ты хочеш играть в игру? / Do you  wonna piay a game? y-> ok; n-> Goodbye
+//magicNaumber = 13 (допустим)
+// напишите программу которая от пользователя будет получать число
+//и сравнивать его с магическим числом кторое есть в нашем коде
+//Это должно быть определено в верхней части кода, а так же значение этого числа 
+// если userNamber меньше magicNaumber -> скажи user ->  ваше число меньше моего
+//если userNamber больше magicNaumber -> скажи user ->  ваше число больше моего
+//если userNamber равно magicNaumber -> скажи user ->  Поздравляю вы угадали
+//если userNamber -> не число -> скажи user -> `Type error. Incorrect value`
+// пользователь может выйти из нашей игры как в начале программы так и в конце
+//программа не заканчиваеться прока ползователь сам этого не решил
+/*alert(`Hallo, user!`);
+var spiele=true;
+var magicNaumber=23
+var userChoos=prompt(`Wilst du  spilen?`);
+// если userChoos не равен "у",  будет выполняться условие
+// что бы не писать такое выражение/ if(userChoos!==`y`||userChoos===`Y` ); на тот члучай если пользователь изменит регистр
+// приводим userChoos к нижнему регистру  с помощью /toLocaleLowerCase/
+if (userChoos.toLocaleLowerCase()===`y`){
+    while (spiele===true){
+        var userUsernamber=parseInt(prompt(`Enter ur namber:`))
+        if(magicNaumber===userUsernamber) {
+           var isEscape=confirm(`Do you wanna try again`);
+           if(!isEscape){
+            spiele=false;
+           }
+    }
+}
+}
+ else{
+    alert(`Goodbye`)
+}
+// пока/while/ spiele будет True
+//пока перемменная правдивп будет выполняться ко*/
+//! FOR - МЫ ИСПОЛЬЗУЕМ ОПРЕДЕЛЁННОЕ КОЛЛИЧЕСТВО ЦИКЛОВ
+// НАПРИМЕР НАМ НУЖНО ВЫПОЛНИТЬ ЦИКЛ 5 РАЗ-> FOR  СОСТОИТ И СЛЕДУЩЕЙ СТРУКТУРЫ
+//     itter declar/var i=o;i /        condition   incremrnt       
+//FOR (var i=o;i                      <.....,      i++)
+//(itter declar - деклариция итератера /иттератор это счётчик/)
+//condition - условие когда цикл должен остановиться, до каих пор будет работать цикл.  Когда мы получим False - цикл прекратиться.
+//incremrnt - (++) console.log (number++) в консоле будет 1
+//decrement - (--) console.log (--number) в консоле будет -1
+//++  =  +1
+    //у нас есть цикл for; у нас есть переменная i=0; пока i<10; i++ - i на каждой итеррации будет добовлять к себе 1
+//for(var i=0; i<10; i++){
+//console.log(`[i]`,i)
+//}
+    //
+ var greeting =`Halo world!!!`;
+ //length - длина
+ console.log(greeting.length)
+ //мы можем обращаться к элементам по индексу
+ console.log(greeting[1]);
+ 
 
+//  for(var i=0; i<10; i++){
+//     console.log(`[i]`,i)
+//  }
+    //мы можем сказать что цикл будет работать до тех пор пока i<greeting.length
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// for(var i=0; i<greeting.length; i++){
+//         console.log(`[i]`,i)
+//      }
+   // тк элементы в програмировании считаються с нуля мы можем вывести фразу по буквенно
+   // например мы говорим выведи здесь  console.log(`[i]`,greeting[i])
+   for(var i=0; i<greeting.length; i++){
+        //если i равно 5 тогда break 
+        //мы дошли до 5 и условия не будут выполняться
+        if (i===5) break 
+        // по тому же принципу работает 
+        //if (i===5) continue - в этом случае он пропустит 5 элемент
+        console.log(`[CURRENT_COUNTER -i]`, i);
+        console.log(`CURRENT_COUNTER -i - gteeting[i]`,greeting[i]);
+        console.log(`-----------------------------------`)  
+        //если i равно 5 тогда break 
+        //if (i===4) break
+        // нужно следить за логикой проверки те если нам необходимо проверить до 5, тогда нужно запист поднять перед циклом
+        //или можно в конце но тогда проверка до 4  
+    }
+    
+        //i - это на данном этапе всегда число
+        //мы получаем в консоле поэлеменнтный вывод букв
+//!!! USER VALIDATOR
+     
 
 
 

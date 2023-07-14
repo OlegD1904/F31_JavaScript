@@ -135,4 +135,3 @@ if( userName===nameOleh||
 //     else{ console.log("Auf Wiedersehen!")}
 //     //! Hausaufgabe 1
 
-hjf
