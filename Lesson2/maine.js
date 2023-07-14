@@ -400,6 +400,20 @@ if (userChoos.toLocaleLowerCase()===`y`){
         //i - это на данном этапе всегда число
         //мы получаем в консоле поэлеменнтный вывод букв
 //!!! USER VALIDATOR
+//1) Get user: name, email,password, age / нужно получить от пользователя .......
+//2)name must has at least 7 sunbols /имя не должно иметь больше 7 символов
+//3) if name is valid-> check user email / если имя валидно -> тогда мы можем проверить email
+    // если оно не валидно -> тогда мы выдаём сообщение что имя не валидно тогда мы email смотреть не будем
+//4) email should include into it -> "@" symbol - то есть в email должен быть символ @
+//5)  но email мы идём проверять если у нас имя valid /действительное/
+//6) password should (должен) be longer than 7and * might include: namber and strings - пароль должен быть длинее чем 7 символов
+    //и может включать в себя числа и строки
+//7) age must be bigger than 18
+//8) if all above (выше) ist ture -> console.log-> Welcome!
+//9) Ohterwise(в противном случае) -> Go out of here!/ Уходи от сюда!
+
+
+
      
 
 
