@@ -239,6 +239,12 @@ while(!validator.isValiName){
         break
     }
 }
+var userAge=prompt(`Age`)
+if(userAge%4 ===0){
+
+}
+console.log(`Gut Alt!`)
+
    //расчитать ИМТ  
 
 

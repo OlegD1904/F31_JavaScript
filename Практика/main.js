@@ -50,3 +50,109 @@
 //         break
 //     }
 // }
+// let validator={
+//     validName:false,
+//     validAge:false,
+// }
+// while(!validator.validName){
+//    let userName=prompt(`Ihr Name?`)
+//     if(userName[0]===`.`&&userName[userName.length-1]===`!`)
+//     {
+//         validator.validName=true;
+//         console.log([`userName`], userName);
+//         alert(`Okey`);
+//         break
+//     }
+// }
+// let validator={
+//     validName:false,
+//     validAge:false,
+// }
+// while(!validator.validName){
+//     let userName=prompt(`Ihr Name?`);
+//     if(userName[0]===`.`&& userName[userName.length-1]===`!`){
+//         validator.validName=true
+//         console.log([`userName`, userName])
+//         alert(`Okey`)
+//         break
+//     }
+// }
+// let validator={
+//   validName:false,
+//   validAlt:false,
+// }
+// while(!validator.validName){
+//   let userName=prompt(`Введи своё имя/" . " ; " ! " : `)
+//   if (userName[0]===`.` && userName[userName.length-1]===`!`){
+//     validator.validName=true
+//     console.log([`userName`, userName])
+//     alert([`Hallo`,userName])
+  
+//   }
+//   let userAlt=parseInt(prompt(`Ihr alt?`))
+//   if (userAlt%4===0){
+//      validator.validAlt=true
+//     console.log([`Alt`,userAlt ])
+//     alert(`Du bist`+``+ userAlt+``+`Jahre alt`)
+//     break
+
+//   }
+// }
+/*let validator={
+  validName:false,
+  validAge:false,
+}
+while(!validator.validName){
+  let userName=prompt(`Was ist dein Name`)
+  if(userName[0]===`.`&& userName[userName.length-1]===`!`){
+    validator.Name=true
+    console.log([`USERNAME`], userName)
+    alert(`Dein Name ist`+ userName)
+    break
+   
+  }  
+}
+let userAlt=parseInt(prompt(`Wie Alt bist du?`))
+
+if(userAlt%4===0){
+  validator.validAge=true;
+  console.log([`USERALT`, userAlt]);
+  alert(`Du bist`+userAlt+`Jahre Alt`);
+  
+
+}*/
+
+
+
+
+
+//!!!
+let validator={
+    validName:false,
+    validAlt:false,
+  }
+  while(!validator.validName){
+    let userName=prompt(`Введи своё имя/" . " ; " ! " : `)
+    if (userName[0]===`.` && userName[userName.length-1]===`!`){
+      validator.validName=true
+      console.log([`userName`, userName])
+      alert([`Hallo`,userName])
+        
+    }    
+  }
+  while(!validator.validAlt){
+    let userAlt=parseInt(prompt(`Ihr alt?`))
+    if (userAlt%4===0){
+       validator.validAlt=true
+      console.log([`Alt`,userAlt ])
+      alert(`Du bist`+``+ userAlt+``+`Jahre alt`)
+      break
+  
+    }
+  }
+
+
+
+    
+
+    
