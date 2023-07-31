@@ -127,31 +127,142 @@ if(userAlt%4===0){
 
 
 //!!!
-let validator={
-    validName:false,
-    validAlt:false,
-  }
-  while(!validator.validName){
-    let userName=prompt(`Введи своё имя/" . " ; " ! " : `)
-    if (userName[0]===`.` && userName[userName.length-1]===`!`){
-      validator.validName=true
-      console.log([`userName`, userName])
-      alert([`Hallo`,userName])
+// let validator={
+//     validName:false,
+//     validAlt:false,
+//   }
+//   while(!validator.validName){
+//     let userName=prompt(`Введи своё имя/" . " ; " ! " : `)
+//     if (userName[0]===`.` && userName[userName.length-1]===`!`){
+//       validator.validName=true
+//       console.log([`userName`, userName])
+//       alert([`Hallo`,userName])
         
-    }    
-  }
-  while(!validator.validAlt){
-    let userAlt=parseInt(prompt(`Ihr alt?`))
-    if (userAlt%4===0){
-       validator.validAlt=true
-      console.log([`Alt`,userAlt ])
-      alert(`Du bist`+``+ userAlt+``+`Jahre alt`)
-      break
+//     }    
+//   }
+//   while(!validator.validAlt){
+//     let userAlt=parseInt(prompt(`Ihr alt?`))
+//     if (userAlt%4===0){
+//        validator.validAlt=true
+//       console.log([`Alt`,userAlt ])
+//       alert(`Du bist`+``+ userAlt+``+`Jahre alt`)
+//       break
   
-    }
-  }
+//     }
+//   }
+// let validator={
+//   validName:false,
+//   validAdge:false,
+// }
+// while(!validator.validName){
+//   let userName=prompt(`Введите своё имя:`);
+//   if(userName[0]===`.`&& userName[userName.length-1]===`!`){
+//     validator.validName=true;
+//     console.log([`userName`, userName]);
+//     alert(`Здравствуйте`+ userName);
+//     break
+//   }
+// }
+// while(!validator.validAdge){
+//   let userAlt=+prompt(`Ваш возрост?`)
+//   if(userAlt%4===0){
+//     validator.validAdge=true;
+//     console.log([`Ваш возрост`, userAlt]);
+//     alert(`Ваш возрост`+ userAlt)
+    
+//   }
+
+// }
+// let validator={
+//   userName:false,
+//   userAge:false,
+// }
+// while(!validator.userName){
+//   let userName=prompt(`Введите своё имя:`)
+//   if(userName[0]==="." && userName[userName.length-1]===`!`){
+//     validator.userName=true;
+//     console.log([`Имя`], userName);
+//     alert(`Привет`+ userName)
+//     break
+//   }
+// }
+// while(!validator.userAge){
+//   let userAge=prompt(`Bведите ваш возрост`)
+
+//   if(userAge%2===0){
+//     validator.userAge=true;
+//     console.log([`userAge`], typeof userAge, userAge);
+//     alert(`Ваш возрост`+ userAge);
+//     break
+
+//   }
+  
+// }
+// let validator={
+//   validName: false,
+//   validAge:false,
+// }
+// while(!validator.validName){
+//  var userName=prompt(`Введите своё имя`);
+//   if(userName[0]===`.` && userName[userName.length-1]===`!`){
+//     validator.userName=true;
+//     console.log([`userName`], typeof userName, userName)
+//     alert(`Привет`, userName)
+//     break
+//   }
+// }
+// while(!validator.validAge){
+//   let userAge=prompt(`Введите свой возрост`)
+//   if (userAge%3===0){
+//     validator.validAge=true;
+//     console.log([`userAge`, typeof userAge, userAge])
+//     alert(`Hallo`:\n+ userName + `ваш возрост`+ userAge)
+//     break
+//   }
+// }
+// const validator={
+//   validName:false,
+//   validAlt:false,
+// }
+// while(!validator.validName){
+//     const userName=prompt(`Geben Sie Ihren Namen ein :" . ";" ! ":`);
+//     if(userName[0]===`.` && userName[userName.length-1]===`!`){
+//       validator.validName=true;
+//       console.log([`userName`, typeof userName, userName]);
+//       alert(`Hallo`, userName);
+//       break;
+//     }
+// }
+// while(!validator.validAlt){
+//   const userAlt=+prompt(`Geben Sie Ihren Alt ein:`);
+//   if(userAlt%2===0){
+//     validator.validAlt=true;
+//     console.log([`USERALT`], typeof userAlt, userAlt);
+//     alert(`Sie sind`+userAlt+`Jahre Alt`);
+//     break
+//   }
 
 
+// }
+
+
+
+// HOMEWORK 1
+
+// U should create a programm that takes :
+// name
+// yearOfBirth
+// surname
+// Is it love money ?
+
+// as a result : both (users name and surname ) into modal window
+// how old is it , let say :
+// user entred 1973 => 50
+
+// *
+// if isLove -> Welcome , pane !
+// otherwise !isLove -> Sorry , here is a training business,
+//  go away please!
 
     
 
